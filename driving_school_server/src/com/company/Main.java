@@ -14,10 +14,10 @@ public class Main {
     public static void main(String[] args) {
 
         //Create a maps (teacherMap, carMap, studentMap) and load data from the files
-
-        File teachersFile = new File("C:\\Users\\User\\Desktop\\driving school\\teacherMap.txt");
-        File carsFile = new File("C:\\Users\\User\\Desktop\\driving school\\carMap.txt");
-        File studentsFile = new File("C:\\Users\\User\\Desktop\\driving school\\studentMap.txt");
+        String pathname = "src\\com\\company";
+        File teachersFile = new File(pathname + "\\teacherMap.txt");
+        File carsFile = new File(pathname + "\\carMap.txt");
+        File studentsFile = new File(pathname + "\\studentMap.txt");
         Map<String, Teacher> teacherMap = loadingTeachersDetails(teachersFile);
         Map<String, Car> carMap = loadingCarsDetails(carsFile);
         Map<String, Student> studentMap = loadingStudentDetails(studentsFile);
